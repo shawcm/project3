@@ -1,6 +1,6 @@
 BIN := MaxMinTemperature
 OUT := out
-SRC := src/*.java
+SRC = src/*.java
 
 .PHONY: all
 all: $(SRC)
