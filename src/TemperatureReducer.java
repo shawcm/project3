@@ -15,7 +15,7 @@ public	class	TemperatureReducer
 				float val = key.equals(new Text("min")) ? Float.MAX_VALUE : Float.MIN_VALUE;
 
 				for	(FloatWritable	value	:	values)	{
-						if (key.equals(Text("max"))) {
+						if (key.equals(new Text("max"))) {
 							val	=	Math.max(val,	value.get());
 						} else {
 							val	=	Math.min(val,	value.get());
