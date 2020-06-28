@@ -12,7 +12,7 @@ public class MaxMinTemperatures {
 	public static void main(String[] args) throws Exception	{
 
 		if (args.length != 2) {
-			System.err.Println("usage: MaxMinTemperature <input path> <output path>");
+			System.error.Println("usage: MaxMinTemperature <input path> <output path>");
 			System.exit(-1);
 		}
 

@@ -12,7 +12,7 @@ public	class	TemperatureReducer
 		public	void	reduce(Text	key,	Iterable<FloatWritable>	values,	Context	context)
 						throws	IOException,	InterruptedException	{
 				
-				float val = key.equals(Text("min")) ? Float.MAX_VALUE : Float.MIN_VALUE;
+				float val = key.equals(new Text("min")) ? Float.MAX_VALUE : Float.MIN_VALUE;
 
 				for	(FloatWritable	value	:	values)	{
 						if (key.equals(Text("max"))) {
